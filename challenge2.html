@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <title>JavaScript</title>
+    
+    <style>
+        h1{
+            background-color:red;
+            font-family: 'Macondo', cursive;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 200px;
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <h1 id="heading">Multiplication Answer</h1>
+    
+    <script>
+        let a = prompt("Pick the first number to be multiplied: ");
+        let b = prompt("Pick the second number to be multiplied: ");
+        let head = document.getElementById("heading");
+            head.textContent = "Answer is: " + a*b;
+        if (a*b > 100) {
+            document.getElementById('heading').style.backgroundColor = "blue";
+        } else {
+            document.getElementById('heading').style.backgroundColor = "green";
+        }
+        
+    </script>
+</body>
+</html>

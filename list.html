@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+        <title>JS Form</title>
+    </head>
+    <body>
+        <ul id="myList"></ul>  
+        <script>
+            let number = prompt("Enter a number: ")
+            for (let i =0; i < number; i++) {
+                document.getElementById("myList").innerHTML += "<li>" + i + "</li>";
+            }
+        </script>
+    </body>
+</html>
+
+//.innerHTML changes the actual HTML
