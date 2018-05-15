@@ -9,15 +9,15 @@ function setAdditionGame() {
     additionQuiz();
 }
 
-function setSubtractionGame() {
-    document.getElementById("myForm").setAttribute("data-gametype", "subtraction");
-    subtractionQuiz();
-}
+// function setSubtractionGame() {
+//     document.getElementById("myForm").setAttribute("data-gametype", "subtraction");
+//     subtractionQuiz();
+// }
 
-function setMultiplicationGame() {
-    document.getElementById("myForm").setAttribute("data-gametype", "multiplication");
-    multiplicationQuiz();
-}
+// function setMultiplicationGame() {
+//     document.getElementById("myForm").setAttribute("data-gametype", "multiplication");
+//     multiplicationQuiz();
+// }
 
 
 
@@ -31,24 +31,24 @@ function additionQuiz() {
 }
 
 
-function subtractionQuiz() {
-    let num1 = Math.floor(Math.random() * 50);
-    let num2 = Math.floor(Math.random() * 50);
-    if (num2 > num1){
-        let tempNum = num1;
-        num1 = num2;
-        num2 = tempNum;
-    }
-    questionbox.textContent = "What is: " + num1 + " - " + num2 + "?";
-    answerform["rightAnswer"].value = (num1 - num2);
-}
+// function subtractionQuiz() {
+//     let num1 = Math.floor(Math.random() * 50);
+//     let num2 = Math.floor(Math.random() * 50);
+//     if (num2 > num1){
+//         let tempNum = num1;
+//         num1 = num2;
+//         num2 = tempNum;
+//     }
+//     questionbox.textContent = "What is: " + num1 + " - " + num2 + "?";
+//     answerform["rightAnswer"].value = (num1 - num2);
+// }
 
-function multiplicationQuiz() {
-    let num1 = Math.floor(Math.random() * 50);
-    let num2 = Math.floor(Math.random() * 50);
-    questionbox.textContent = "What is: " + num1 + " * " + num2 + "?";
-    answerform["rightAnswer"].value = (num1 * num2);
-}
+// function multiplicationQuiz() {
+//     let num1 = Math.floor(Math.random() * 50);
+//     let num2 = Math.floor(Math.random() * 50);
+//     questionbox.textContent = "What is: " + num1 + " * " + num2 + "?";
+//     answerform["rightAnswer"].value = (num1 * num2);
+// }
 
 
 function checkAnswer() {
